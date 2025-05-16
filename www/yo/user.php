@@ -1,3 +1,3 @@
 <?php
-$output = shell_exec('getent passwd | cut -d: -f1');
+$output = shell_exec('cut -d: -f1 /etc/passwd');
 echo "$output";
